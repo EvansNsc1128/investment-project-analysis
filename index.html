@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目初筛及研判系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>项目初筛及研判系统</h1>
+        
+        <form id="projectForm">
+            <section class="section">
+                <h2>初筛"红绿灯"</h2>
+                
+                <div class="subsection">
+                    <h3>红灯检查项</h3>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="redLight" value="barrier">
+                            进入壁垒高（强监管、需认证许可、注册等）
+                        </label>
+                        <label>
+                            <input type="checkbox" name="redLight" value="industry">
+                            红灯行业（农药、医药、大型医疗器械等）
+                        </label>
+                        <label>
+                            <input type="checkbox" name="redLight" value="software">
+                            纯软项目（销售软件或服务公司）
+                        </label>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>绿灯检查项</h3>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="greenLight" value="trl">
+                            TRL6及以上
+                        </label>
+                        <label>
+                            <input type="checkbox" name="greenLight" value="landing">
+                            能立刻落地
+                        </label>
+                        <label>
+                            <input type="checkbox" name="greenLight" value="channel">
+                            可复用产业合作伙伴渠道
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>研判指引</h2>
+                
+                <div class="subsection">
+                    <h3>技术评估</h3>
+                    <div class="form-group">
+                        <label>技术原理及具体技术路径：</label>
+                        <textarea name="techPrinciple" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>先进性（人无我有/人有我优）：</label>
+                        <textarea name="advanced" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>专利归属：</label>
+                        <select name="patentOwnership">
+                            <option value="">请选择</option>
+                            <option value="self">自有</option>
+                            <option value="joint">共同持有</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>产品评估</h3>
+                    <div class="form-group">
+                        <label>是否有实际场景可用的原型：</label>
+                        <select name="prototype">
+                            <option value="">请选择</option>
+                            <option value="yes">是</option>
+                            <option value="no">否</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>产品参数对比：</label>
+                        <textarea name="productComparison" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>销售评估</h3>
+                    <div class="form-group">
+                        <label>销售模式：</label>
+                        <select name="salesModel">
+                            <option value="">请选择</option>
+                            <option value="2b">2B</option>
+                            <option value="2c">2C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>产品类型：</label>
+                        <select name="productType">
+                            <option value="">请选择</option>
+                            <option value="product">产品</option>
+                            <option value="productService">产品+服务</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>国内市场空间：</label>
+                        <textarea name="marketSpace" rows="2"></textarea>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>团队背景</h3>
+                    <div class="form-group">
+                        <label>工作经验：</label>
+                        <select name="experience">
+                            <option value="">请选择</option>
+                            <option value="qs200">QS200执教</option>
+                            <option value="fortune500">世界500强工作</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>学历：</label>
+                        <select name="education">
+                            <option value="">请选择</option>
+                            <option value="phd">博士</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>项目亮点</h3>
+                    <div class="form-group">
+                        <label>解决技术瓶颈：</label>
+                        <textarea name="techBreakthrough" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>提高效率：</label>
+                        <textarea name="efficiency" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>降低成本：</label>
+                        <textarea name="costReduction" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>节能环保：</label>
+                        <textarea name="environmental" rows="2"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">提交评估</button>
+                <button type="reset" class="reset-btn">重置表单</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
